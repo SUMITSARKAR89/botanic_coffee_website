@@ -44,14 +44,35 @@
     ============= header start here  ==============
     -------------------------------------------*/ -->
     <header>
+        <div class="navigationMenu">
+            <nav>
+                <a href="index.html" class="active"> homepage</a>
+                <a href="menu.html" > menu</a>
+                <a href="shop.html" > shop</a>
+                <a href="jobs.html" > jobs</a>
+                <a href="location.html" > location</a>
+            </nav>
+            <div class="nav-action">
+                <div class="openMenu">
+                    <i class="ri-menu-line"></i>
+                    <h5>botanical</h5>
+                </div>
+                <div class="closeMenu">
+                    <i class="ri-close-line"></i>
+                    <h5>botanical</h5>
+                </div>
+            </div>
+
+        </div>
+
         <div class="head">
             <div class="head-left">
-                <a href="" class="active">home</a>
-                <a href="">menu</a>
+                <a href="index.html" class="active">home</a>
+                <a href="menu.html">menu</a>
             </div>
             <div class="head-right">
-                <a href="">location</a>
-                <a href="">jobs</a>
+                <a href="location.html">location</a>
+                <a href="jobs.html">jobs</a>
                 <i class="ri-shopping-cart-2-fill"></i>
             </div>
         </div>
@@ -86,11 +107,11 @@
         <a href="#main" class="down-arrow"><i class="ri-arrow-down-line"></i></a>
 
         <div class="head-btn-card">
-            <a href="" class="btn">Explore Goodies</a>
+            <a href="shop.html" class="btn">Explore Goodies</a>
         </div>
-
-
     </header>
+   
+    
     <!-- /* ----------------------------------------
     ============= main start here  ==============
     -------------------------------------------*/ -->
@@ -123,28 +144,246 @@
 
         </section>
         <!-- ===========================greenies image slider========== -->
-         <section id="greeniesSlider">
+        <section id="greeniesSlider">
             <div class="image-container">
                 <div class="img show-img">
                     <img src="photo/grenniesIMG (3).jpg" alt="">
                     <div class="show-card">
                         <div class="show-text">
+                          <div class="text-title">
                             <h4>prague</h4>
                             <p>Botanical Coffee Shop in Prague offers a serene oasis with its lush decor and artisanal coffees.</p>
+                          </div>
+                          <a href="location.html" class="show-link"> <i class="ri-arrow-right-line"></i></a>
                         </div>
-                        <i class="ri-arrow-right-line"></i>
+                        <div class="show-footer">
+                            <div class="navigate">
+                                <i class="ri-map-pin-fill"></i>
+                                <span>navigate</span>
+                            </div>
+                            <div class="navigator-time">
+                                <p>monday to sunday</p>
+                                <p>09 AM- 07PM</p>
+                            </div>
+                        </div> 
                     </div>
                 </div>
                 <div class="img">
                     <img src="photo/grenniesIMG (2).jpg" alt="">
-                    <h4>image 2</h4>
+                    <div class="show-card">
+                        <div class="show-text">
+                          <div class="text-title">
+                            <h4>Berlin </h4>
+                            <p>Berlin's dynamic coffee culture features innovative shops where baristas experiment with new brewing techniques.</p>
+                          </div>
+                          <a href="location.html" class="show-link"> <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                        <div class="show-footer">
+                            <div class="navigate">
+                                <i class="ri-map-pin-fill"></i>
+                                <span>navigate</span>
+                            </div>
+                            <div class="navigator-time">
+                                <p>monday to saturday</p>
+                                <p>09 AM- 05 PM</p>
+                            </div>
+                        </div> 
+                    </div>
                 </div>
                 <div class="img">
                     <img src="photo/grenniesIMG (1).jpg" alt="">
-                    <h4>image 3</h4>
+                    <div class="show-card">
+                        <div class="show-text">
+                          <div class="text-title">
+                            <h4>Vienna</h4>
+                            <p>Vienna's coffee scene blends historic cafes and modern spots, all dedicated to perfecting the art of coffee making.</p>
+                          </div>
+                          <a href="location.html" class="show-link"> <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                        <div class="show-footer">
+                            <div class="navigate">
+                                <i class="ri-map-pin-fill"></i>
+                                <span>navigate</span>
+                            </div>
+                            <div class="navigator-time">
+                                <p>monday to sunday</p>
+                                <p>09 AM- 07PM</p>
+                            </div>
+                        </div> 
+                    </div>
                 </div>
             </div>
-         </section>
+        </section>
+
+        <!-- ===========================shop card container========== -->
+        <section id="goods">
+            <div class="goods-title">
+                <h2>Unnecessarily Good Good(s)</h2>
+                <a href="shop.html" class="btn shop-btn"> shop all</a>
+            </div>
+            <div class="goods-container">
+                <div class="goods-card">
+                    <div class="good-img">
+                        <img src="photo/goodimg (1).jpg" alt="">
+                        <i class="ri-heart-3-line"></i>
+                    </div>
+                    <div class="goods-desc">
+                        <div class="goods-info">
+                            <h4>Masha</h4>
+                            <p>Cherry truffle, Blueberry, Kakao nibs</p>
+                            <span>$12-$39</span>
+                        </div>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </div>
+                </div>
+                <div class="goods-card">
+                    <div class="good-img">
+                        <img src="photo/goodimg (1).jpg" alt="">
+                        <i class="ri-heart-3-line"></i>
+                    </div>
+                    <div class="goods-desc">
+                        <div class="goods-info">
+                            <h4>Gogogu</h4>
+                            <p>Cherry truffle, Blueberry, Kakao nibs</p>
+                            <span>$12-$39</span>
+                        </div>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </div>
+                </div>
+                <div class="goods-card">
+                    <div class="good-img">
+                        <img src="photo/goodimg (2).jpg" alt="">
+                        <i class="ri-heart-3-line"></i>
+                    </div>
+                    <div class="goods-desc">
+                        <div class="goods-info">
+                            <h4>V60 Dripper</h4>
+                            <p>Cherry truffle, Blueberry, Kakao nibs</p>
+                            <span>$49</span>
+                        </div>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </div>
+                </div>
+                
+                
+            </div>
+
+        </section>
+
+        <!-- ===========================another menu========== -->
+        <section id="anotherMenu">
+            <div class="anotherMenu-title">
+                <p>We go places that others wouldn’t. For us, “too far” is exactly where we want to be. All in the name of coffee.</p>
+                <h2>Another Menu</h2>
+            </div>
+            <div class="another-container">
+                <div class="another-left">
+                    <img src="photo/anotherimg (4).jpg" alt="">
+                    <i class="ri-arrow-right-line"></i>
+                    <div class="another-content">
+                        <h4>location</h4>
+                        <p>All critical efforts along the journey result in coffees that are a sum of choices made with the single goal in mind: how does the final product taste in your cup.</p>
+                    </div>
+                </div>
+                <div class="another-right">
+                    <img src="photo/anotherimg (1).jpg" alt="">
+                    <i class="ri-arrow-right-line"></i>
+                    <div class="another-content">
+                        <h4>menu</h4>
+                        <p>It doesn’t have to taste that way. But it does. It’s not your typical. It's unnecessarily good.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="another-container">
+                
+                <div class="another-right">
+                    <img src="photo/heroimg (1).jpg" alt="">
+                    <i class="ri-arrow-right-line"></i>
+                    <div class="another-content">
+                        <h4>shop</h4>
+                        <p>Unnecessarily Good Good(s).</p>
+                    </div>
+                </div>
+                <div class="another-left">
+                    <img src="photo/anotherimg (3).jpg" alt="">
+                    <i class="ri-arrow-right-line"></i>
+                    <div class="another-content">
+                        <h4>work with us</h4>
+                        <p>Explore exciting opportunities in our Jobs section and brew success with us in a vibrant, welcoming environment where your love for coffee thrives.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===========================video-card======================== -->
+        <section id="video-card">
+           <div class="video-content">
+            <h2>It’s not standard. Or normal.</h2>
+            <p>From the moment coffee is planted until it is served, our coffee has gone through the hands of countless individuals who are all remarkable within their field. All critical efforts along the journey result in coffees that are a sum of choices made with the single goal in mind: how does the final product taste in your cup.</p>
+           </div>
+
+           <div class="video-card-container">
+           <div class="video-left">
+               <div class="video-one">
+                <video src="https://videos.pexels.com/video-files/6508497/6508497-sd_640_360_24fps.mp4" class="" autoplay loop muted ></video>
+               </div>
+           </div>
+            <div class="video-right">
+                <div class="video-two">
+                    <video src="https://videos.pexels.com/video-files/11877573/11877573-sd_360_640_30fps.mp4" class="" autoplay loop muted ></video>
+                </div>
+               <div class="video-three">
+                <video src="https://videos.pexels.com/video-files/7116730/7116730-sd_360_640_25fps.mp4" class="" autoplay loop muted ></video>
+               </div>
+
+            </div>
+           </div>
+        </section>
+
+        <!-- ===========================accordion FAQ======================== -->
+        <section id="faq">
+            <div class="faq-container">
+                <div class="faq-content">
+                    <div class="quesion">
+                        <h3>Do you offer non-dairy milk options?</h3>
+                        <i class="ri-arrow-right-up-line icon-acc"></i>
+                    </div>
+                    <div class="answare">
+                        <p>Yes, we offer almond, soy, and oat milk as non-dairy alternatives.</p>
+                    </div>
+                </div>
+                <div class="faq-content">
+                    <div class="quesion">
+                        <h3>Can I order online for pickup?</h3>
+                        <i class="ri-arrow-right-up-line icon-acc"></i>
+                    </div>
+                    <div class="answare">
+                        <p>Absolutely! You can place your order online through our website for quick and easy pickup.</p>
+                    </div>
+                </div>
+                <div class="faq-content">
+                    <div class="quesion">
+                        <h3>Do you have free Wi-Fi?</h3>
+                        <i class="ri-arrow-right-up-line icon-acc"></i>
+                    </div>
+                    <div class="answare">
+                        <p>Yes, we offer free Wi-Fi to all our customers. Just ask our staff for the password.</p>
+                    </div>
+                </div>
+                <div class="faq-content">
+                    <div class="quesion">
+                        <h3>Where are you located?</h3>
+                        <i class="ri-arrow-right-up-line icon-acc"></i>
+                    </div>
+                    <div class="answare">
+                        <p>We are located at 123 Main Street, right in the heart of downtown.</p>
+                    </div>
+                </div>
+                
+            </div>
+
+        </section>
+         
       
 
     </main>
@@ -152,7 +391,38 @@
     ============= footer start here  ==============
     -------------------------------------------*/ -->
     <footer>
+        <div class="foot">
+            <h2>Join the community!</h2>
+            <div class="submit-email">
+                <input type="email" name="email" id="email"  placeholder="example@email.com">
+                <input type="submit" class="signUp-btn btn" value="Sign Up">
 
+            </div>
+            <p>No spam. Just weekly news from the Botanic world.</p>
+        </div>
+        <div class="foot-card">
+            <div class="foot-social-links">
+                <i class="ri-instagram-line"></i>
+                <i class="ri-pinterest-line"></i>
+                <i class="ri-whatsapp-fill"></i>
+                <i class="ri-unsplash-fill"></i>
+            </div>
+            <div class="foot-links">
+                <div class="foot-link">
+                    <a href="privacy.html">privacy policy</a>
+                    <a href="imprint.html">imprint</a>
+                    <a href="jobs.html">jobs</a>
+                </div>
+                <div class="foot-link">
+                    <a href="index.html" class="active">homepage</a>
+                    <a href="location.html">location</a>
+                    <a href="shop.html">shop</a>
+                </div>
+            </div>
+        </div>
+        <div class="copywrites">
+            <p>botanic 2025</p>
+        </div>
     </footer>
     
     <script src="asset/JsFile/main.js"></script>
