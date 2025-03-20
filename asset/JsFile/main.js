@@ -53,23 +53,45 @@ faqContent.forEach( faqs => {
 });
 
 // ========================menuBar============================
+window.addEventListener("scroll", () => {
+    const sectionsClass = document.querySelectorAll(".locationbtnCard");
+    const scrollY = window.pageYOffset; // Current scroll position
 
-const navigationMenu = document.querySelector(".navigationMenu");
-const openMenu = document.querySelector(".openMenu");
-const closeMenu = document.querySelector(".closeMenu");
-const nav = document.querySelector("nav");
+    sectionsClass.forEach((section) => {
+        const sectionHeight = section.offsetHeight;
+        const sectionTop = section.offsetTop - 60; // Offset for positioning
+        const sectionId = section.getAttribute("id"); // Get the section's ID
 
-openMenu.addEventListener("click", () => {
-    navigationMenu.style.maxHeight = "70vh";
-    nav.style.display = "flex";
-    openMenu.style.display = "none";
-    closeMenu.style.display = "flex";
+        const menuItem = document.querySelector(`#location-left .location-btns a[href*="${sectionId}"]`);
+
+        // Check if the scroll position is within the section
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            menuItem.classList.add("active");
+        } else {
+            menuItem.classList.remove("active");
+        }
+    });
 });
 
-closeMenu.addEventListener("click", () => {
 
-    navigationMenu.style.maxHeight = "12vh";
-    nav.style.display = "none";
-    openMenu.style.display = "flex";
-    closeMenu.style.display = "none";
+
+// ========================LOcalmenuBar============================
+const localNavMenu = document.querySelector(".localNavigation");
+const localNav = document.querySelector(".localNav");
+const localopenMenu= document.querySelector(".localopenMenu");
+const localcloseMenu = document.querySelector(".localcloseMenu");
+
+localopenMenu.addEventListener("click", () => {
+    localNavMenu.style.maxHeight = "70vh";
+    localNav.style.display = "flex";
+    localopenMenu.style.display = "none";
+    localcloseMenu.style.display = "flex";
 });
+localcloseMenu.addEventListener("click", () => {
+    localNavMenu.style.maxHeight = "12vh";
+    localNav.style.display = "none";
+    localopenMenu.style.display = "flex";
+    localcloseMenu.style.display = "none";
+
+})
+
