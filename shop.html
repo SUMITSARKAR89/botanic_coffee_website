@@ -68,6 +68,10 @@
             </div>
     
         </div>
+        <div id="cart">
+            <i class="ri-shopping-cart-2-fill" id="cartIcon"></i>
+            <span class="cart-count"></span>
+        </div>
 
         <!-- ========================goods container section============== -->
         <section id="shopGoods">
@@ -75,6 +79,168 @@
                 <h2> Unnecessarily Good Good(s)</h2>
                 <p>It’s not your typical. It's unnecessarily good. Maybe that's because we're unnecessarily driven.</p>
             </div>
+
+          <div class="container">
+            <div class="shop-goods-container">
+                <div class="shop-btnGroups">
+                    <button class="btn_one active-one" onclick="filterSelectionOne('all')">view all</button>
+                    <button class="btn_one" onclick="filterSelectionOne('coffee')">coffee</button>
+                    <button class="btn_one" onclick="filterSelectionOne('brewing-gear')">brewing Gear</button>  
+                    <button class="btn_one " onclick="filterSelectionOne('Merchandise')">merchandise</button>
+                    
+                </div>
+                <div class="slideOne-search">
+                    <input type="search" name="search" id="searchOne-input" placeholder="search.." autocomplete onkeyup="searchOn()">  
+                </div>
+            </div>
+
+            <div class="shop-good-card-container">
+                <div class="goods-card sliderOneContent active-one brewing-gear">
+                    <div class="good-img">
+                        <img src="photo/goodscartImg (4).jpg" alt="">
+                        <i class="ri-heart-3-line"></i>
+                    </div>
+                    <div class="goods-desc">
+                        <div class="goods-info">
+                            <h4 class="headTitle-shop">v60 paper filter</h4>
+                            <p>Cherry truffle, Blueberry, Kakao nibs</p>
+                            <span>$19</span>
+                        </div>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </div>
+                </div>
+                <div class="goods-card  sliderOneContent  coffee">
+                    <div class="good-img">
+                        <img src="photo/goodimg (1).jpg" alt="">
+                        <i class="ri-heart-3-line"></i>
+                    </div>
+                    <div class="goods-desc">
+                        <div class="goods-info">
+                            <h4 class="headTitle-shop">Masha</h4>
+                            <p>Cherry truffle, Blueberry, Kakao nibs</p>
+                            <span>$12-$39</span>
+                        </div>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </div>
+                </div>
+                
+                <div class="goods-card sliderOneContent Merchandise">
+                    <div class="good-img">
+                        <img src="photo/goodscartImg (5).jpg" alt="">
+                        <i class="ri-heart-3-line"></i>
+                    </div>
+                    <div class="goods-desc">
+                        <div class="goods-info">
+                            <h4 class="headTitle-shop">Porcelain Cup</h4>
+                            <p>Cherry truffle, Blueberry, Kakao nibs</p>
+                            <span>$39</span>
+                        </div>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </div>
+                </div>
+                <div class="goods-card sliderOneContent coffee">
+                    <div class="good-img">
+                        <img src="photo/goodimg (1).jpg" alt="">
+                        <i class="ri-heart-3-line"></i>
+                    </div>
+                    <div class="goods-desc">
+                        <div class="goods-info">
+                            <h4 class="headTitle-shop">fuji</h4>
+                            <p>Cherry truffle, Blueberry, Kakao nibs</p>
+                            <span>$12-$39</span>
+                        </div>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </div>
+                </div>
+
+                <div class="goods-card sliderOneContent coffee">
+                    <div class="good-img">
+                        <img src="photo/goodimg (1).jpg" alt="">
+                        <i class="ri-heart-3-line"></i>
+                    </div>
+                    <div class="goods-desc">
+                        <div class="goods-info">
+                            <h4 class="headTitle-shop">gogogu</h4>
+                            <p>Cherry truffle, Blueberry, Kakao nibs</p>
+                            <span>$12-$39</span>
+                        </div>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </div>
+                </div>
+                <div class="goods-card sliderOneContent brewing-gear">
+                    <div class="good-img">
+                        <img src="photo/goodscartImg (3).jpg" alt="">
+                        <i class="ri-heart-3-line"></i>
+                    </div>
+                    <div class="goods-desc">
+                        <div class="goods-info">
+                            <h4 class="headTitle-shop">aeropress GO</h4>
+                            <p>Cherry truffle, Blueberry, Kakao nibs</p>
+                            <span>$39</span>
+                        </div>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </div>
+                </div>
+                <div class="goods-card sliderOneContent coffee">
+                    <div class="good-img">
+                        <img src="photo/goodimg (1).jpg" alt="">
+                        <i class="ri-heart-3-line"></i>
+                    </div>
+                    <div class="goods-desc">
+                        <div class="goods-info">
+                            <h4 class="headTitle-shop">el carmen</h4>
+                            <p>Cherry truffle, Blueberry, Kakao nibs</p>
+                            <span>$12-$39</span>
+                        </div>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </div>
+                </div>
+                <div class="goods-card sliderOneContent coffee">
+                    <div class="good-img">
+                        <img src="photo/goodimg (1).jpg" alt="">
+                        <i class="ri-heart-3-line"></i>
+                    </div>
+                    <div class="goods-desc">
+                        <div class="goods-info">
+                            <h4 class="headTitle-shop">la laguna</h4>
+                            <p>Cherry truffle, Blueberry, Kakao nibs</p>
+                            <span>$12-$39</span>
+                        </div>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </div>
+                </div>
+                <div class="goods-card sliderOneContent brewing-gear">
+                    <div class="good-img">
+                        <img src="photo/goodscartImg (1).jpg" alt="">
+                        <i class="ri-heart-3-line"></i>
+                    </div>
+                    <div class="goods-desc">
+                        <div class="goods-info">
+                            <h4 class="headTitle-shop">v60 dripper</h4>
+                            <p>Cherry truffle, Blueberry, Kakao nibs</p>
+                            <span>$49</span>
+                        </div>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </div>
+                </div>
+            
+                <div class="goods-card sliderOneContent Merchandise">
+                    <div class="good-img">
+                        <img src="photo/goodscartImg (2).jpg" alt="">
+                        <i class="ri-heart-3-line"></i>
+                    </div>
+                    <div class="goods-desc">
+                        <div class="goods-info">
+                            <h4>T-shirt Green</h4>
+                            <p>Cherry truffle, Blueberry, Kakao nibs</p>
+                            <span>$79</span>
+                        </div>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </div>
+                </div>
+
+            </div>
+          </div>
         </section>
 
 

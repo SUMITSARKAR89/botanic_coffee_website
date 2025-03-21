@@ -162,6 +162,57 @@
     h5{
         font-size: var(--f-28-h5);
     }
+
+    #cart{
+        position: fixed;
+        max-width: 100%;
+        height: auto;
+        top: 15%;
+        right: 1%;
+        z-index: 9999;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        border-radius: 50%;
+        border: 1px solid var(--color-icon);
+       
+    }
+    #cartIcon{
+        padding: 15px;
+        max-width: 100%;
+        width: 50px;
+        height: 50px;
+        border: 1px solid var(--primary-c);
+        border-radius: 50%;
+        color: var(--color-icon);
+        cursor: pointer;
+        font-size: var(--f-28-h5);
+        background-color: var(--primary-c);
+        transition: var(--transition-1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #cartIcon:hover{
+        background-color: var(--color-icon);
+        color: var(--primary-c);
+    }
+    #cart .cart-count{
+        position: absolute;
+        top: -10px;
+        right: 0px;
+        padding: 5px;
+        border-radius: 50%;
+        max-width: 100%;
+        width: 20px;
+        height: 20px;
+        background: var(--color-icon);
+        color: #fff;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+        font-size: var(--f-14-x-small);
+    }
     
     
    
@@ -297,7 +348,7 @@
    .container{
     max-width: 100%;
     padding: 0.5% 1% ;
-    margin: 0 10% ;
+    margin: 0 7% ;
     
    }
    section{
@@ -436,6 +487,7 @@
     max-width: 100%;
     display: flex;
     gap: 0;
+    position: relative;
 
    }
    header .head .head-left a,
@@ -455,22 +507,8 @@
     background-color:var(--primary-c) ;
     color: var(--color-dark);
    }
-   header .head .head-right i{
-    padding: 15px;
-    max-width: 100%;
-    width: 50px;
-    border: 1px solid var(--primary-c);
-    border-radius: 50%;
-    color: var(--color-icon);
-    cursor: pointer;
-    font-size: var(--f-17-medium);
-    background-color: transparent;
-    transition: var(--transition-1);
-   }
-   header .head .head-right i:hover{
-    background-color: var(--color-icon);
-    color: var(--primary-c);
-   }
+  
+   
 
    header .header-info{
     position: absolute;
@@ -2186,6 +2224,90 @@
     
 }
 
+/* =================================shop goods cntainer======================= */
+.shop-goods-container{
+    max-width: 100%;
+    display: flex;
+    
+    gap: 45px;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5% auto;
+}
+.shop-btnGroups{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    animation: fade 1s ease-in-out;
+}
+.shop-btnGroups .btn_one{
+    font-size: var(--f-17-medium);
+    background: var(--primary-c);
+    border-radius: 30px;
+    padding: 12px 35px;
+    max-width: 100%;
+    text-align: center;
+    border: 1px solid var(--color-dark);
+    font-weight: 600;
+    transition: var(--transition-1);
+}
+.shop-btnGroups .btn_one:hover,
+.shop-btnGroups .btn_one.active-one{
+    background: var(--color-dark);
+    color: var(--primary-c);
+    transition: 0.3s ease-in-out;
+}
+
+.shop-goods-container .slideOne-search{
+    max-width: 100%;
+    cursor: pointer;
+    padding: 2px;
+    border: 1px solid #333;
+    border-radius: 25px;
+}
+#searchOne-input{
+    padding: 10px 15px;
+    max-width: 100%;
+    border-radius: 25px;
+    border: 0;
+    outline: 0;
+    font-size: var(--f-17-medium);
+    color: var(--color-dark);
+    font-weight: 600;
+}
+#searchOne-input::placeholder{
+    font-weight: 500;
+    opacity: 0.7;
+}
+.shop-good-card-container{
+    max-width: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.shop-good-card-container .sliderOneContent{
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    padding: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 5px 40px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: var(--transition-1);
+    cursor: pointer;
+    display: none;
+    animation: fade 1s ease-in-out;
+}
+.sliderOneContent.active-one{
+    display: block;
+}
+
+
 
  /* -----------------------------------------------------------------------
     ============= imprint start here/Privacy start here  ===========================================
@@ -2297,5 +2419,7 @@
     list-style-type: circle;
     padding-top:5px ;
 }
+
+ 
 
 

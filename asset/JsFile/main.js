@@ -52,6 +52,55 @@ faqContent.forEach( faqs => {
     })
 });
 
+// ========================goods and shop cart button active============================
+const btnOne = document.querySelectorAll(".btn_one");
+const contentOne = document.querySelectorAll(".sliderOneContent");
+// console.log(btnOne, contentOne);
+function filterSelectionOne(category) {
+    // Show all if category is 'all', otherwise filter by category
+    contentOne.forEach((a) => {
+      if (category === "all" || a.classList.contains(category)) {
+        a.classList.add('active-one');
+        
+      } else {
+        a.classList.remove('active-one');
+        
+      }
+    });
+  }  
+  filterSelectionOne("all");
+
+//   -----activate button ---
+  btnOne.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      
+      btnOne.forEach((btn) => {
+        btn.classList.remove('active-one')
+      });
+     
+      btn.classList.add('active-one');
+      
+    });
+  });
+//   ----- search activate---------
+function searchOn() {
+    const inputSearch = document.getElementById('searchOne-input').value.toUpperCase();  // Correct method name and use more descriptive variable name
+    const contentsOne = document.querySelectorAll('.sliderOneContent');  // Simplified variable name
+
+    contentsOne.forEach((content) => {
+        const headline = content.querySelector('.headTitle-shop');
+        const headlineText = headline.textContent || headline.innerText;  // Extract text from the headline
+
+        // If the search term is found in the headline text
+        if (headlineText.toUpperCase().includes(inputSearch)) {
+            content.style.display = "";  // Show the content
+        } else {
+            content.style.display = "none";  // Hide the content
+        }
+    });
+}
+
+
 // ========================menuBar============================
 window.addEventListener("scroll", () => {
     const sectionsClass = document.querySelectorAll(".locationbtnCard");
@@ -93,5 +142,5 @@ localcloseMenu.addEventListener("click", () => {
     localopenMenu.style.display = "flex";
     localcloseMenu.style.display = "none";
 
-})
+});
 
