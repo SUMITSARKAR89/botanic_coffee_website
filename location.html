@@ -42,9 +42,36 @@
     <title> Botanical Coffee Shop From Greenies to Delight..</title>
 </head>
 <body id="locationHTML">
-    <div id="cart">
+    <a href="shop.html" id="cart">
         <i class="ri-shopping-cart-2-fill" id="cartIcon"></i>
         <span class="cart-count"></span>
+    </a>
+    <div id="cart-body"><!--js-->
+        <h5 class="cart-body-title">Your Cart</h5>
+        <i class="ri-close-circle-fill cencel-cart" ></i>
+        <div class="cart-body-content"><!--js-->
+            <!-- <div class="cart-box">
+                <img src="photo/goodscartImg (1).jpg" alt="" class="cart-img">
+                <div class="cart-details">
+                    <h5 class="cart-details-name">model- V11</h5>
+                    <span class="cart-price">$90</span>
+                    <div class="cart-qty">
+                        <button id="minus">-</button>
+                        <span class="number">1</span>
+                        <button id="plus">+</button>
+                    </div>
+                </div>
+                <i class="ri-delete-bin-6-line" id="cardRemove"></i>  
+            </div>  -->
+            
+        </div>
+
+        <div class="total-amount">
+            <div class="total-title">total</div>
+            <div class="total-price">$0</div><!--js-->
+        </div>
+        <button class="buy_btn">Buy now</button>
+        <i class="fa-solid fa-x cencel-cart"></i>
     </div>
 
     <div class="localNavigation" style="position: fixed; margin-top: 5px;">
