@@ -1,0 +1,337 @@
+:root{
+     /* fontsize  */
+    
+     --f-28-Xlarge: 28px;
+     --f-26-large: 26px;
+     --f-17-medium: 17px;
+     --f-16-semi: 16px;
+     --f-15-small: 15px; 
+     --f-14-x-small: 14px;
+ 
+    
+     --f-160-h1: 160px;
+     --f-76-h2: 76px;
+     --f-48-h3: 48px;
+     --f-32-h4: 32px;
+     --f-28-h5: 28px;
+ 
+}
+@media(max-width: 1460px){
+    header .head{
+        width: 92%;
+    }
+
+}
+@media(max-width: 1280px){
+    :root{
+        /* fontsize  */
+       
+        --f-28-Xlarge: 24px;
+        --f-26-large: 22px;
+        --f-17-medium: 16px;
+        --f-16-semi: 16px;
+        --f-15-small: 15px; 
+        --f-14-x-small: 14px;
+    
+       
+        --f-160-h1: 140px;
+        --f-76-h2: 70px;
+        --f-48-h3: 45px;
+        --f-32-h4: 28px;
+        --f-28-h5: 26px;
+    
+   } 
+   .seven-body-slider{  
+    height:90vh;
+}
+.seven-body-slider .sevenImg{
+    height: 90vh; 
+}
+#cart{
+    right: 4%;
+}
+.greenies-container{
+    flex-direction: column;
+    gap: 50px;
+}
+.image-container,
+.goods-container{
+    grid-template-columns: repeat(2, 1fr);
+}
+#goods .goods-title{
+    max-width: 100%;
+    margin-bottom: 8%;
+}
+.good-img{
+    width: 100%;
+}
+#anotherMenu .anotherMenu-title{
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+
+#menuHtmlBody,
+#locationHTML{
+    flex-direction: column;
+}
+#menuLeft{
+    width: 100%;
+    height: 35vh;
+    position: relative;
+    margin: 0 auto;
+}
+#menuRight,
+#location-right{
+    width: 96%;
+    overflow: none;
+    position: relative;
+    right: 0px;
+   
+}
+#local-footer .local-foot{
+    height: 50vh;
+}
+.local-link-content{
+    height: 30vh;
+}
+
+
+#location-left{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+#location-left .locationLeft-bg{
+    height: 50vh;
+
+}
+#location-left .location-btns{
+    margin-top: 5%;
+   
+}
+#inprint{
+    height: 100.5vh;
+}
+#inprint .privacy-container,
+#inprint .imprint-card{
+    width: 80%;
+    height: 100vh;
+}
+.shop-btnGroups{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.shop-good-card-container{
+   
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+}
+
+@media(max-width: 980px){
+    .navigationMenu{
+        top: 20px;
+        animation: zoom 0.5s linear;
+    }
+    header .head{
+        opacity: 0;
+
+    }
+    .another-container,
+    #video-card .video-card-container{
+        flex-direction: column;
+    }
+    .another-container:last-child{
+        flex-direction: column-reverse;
+    }
+    .another-container .another-left,
+    .another-container .another-right,
+    .video-card-container .video-left,
+    .video-card-container .video-right{
+        width: 95%;
+    }
+    .video-card-container .video-right{
+        flex-direction: row;
+    }
+    .video-left .video-one video{
+        border-radius: 20px 20px 0 0;
+    }
+    .video-right .video-two,
+    .video-right .video-three{
+
+        height: 300px;
+
+       
+    }
+    .video-right .video-two video,
+    .video-right .video-three video{
+        border-radius: 0 0 30px 30px;
+
+    }
+   
+    .another-container .another-right{
+        height: 30vh;
+    }
+}
+@media(max-width: 860px){
+
+    .image-container,
+    .goods-container,
+    .shop-good-card-container{
+        grid-template-columns: 1fr;
+    }
+    .img{
+        width: 100%;
+    }
+    .foot-card  .foot-links{
+        flex-direction: column;
+    }
+    #goods .goods-title,
+    .shop-goods-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+    #shopGoods .shopGoods-title{
+        width: 95%;
+    }
+    #prague,
+    #berlin,
+    #vienna{
+        height: 50vh;
+    }
+    
+    #inprint .imprint-card,
+    #inprint .privacy-container{
+        width: 98%;
+       
+        background: #ffffffc0;
+        backdrop-filter: blur(50px);
+       
+    }
+    footer{
+        height: 120vh;
+    }
+   
+}
+@media(max-width: 746px){
+    :root{
+        /* fontsize  */
+       
+        --f-28-Xlarge: 20px;
+        --f-26-large: 20px;
+        --f-17-medium: 16px;
+        --f-16-semi: 16px;
+        --f-15-small: 15px; 
+        --f-14-x-small: 14px;
+    
+       
+        --f-160-h1: 100px;
+        --f-76-h2: 60px;
+        --f-48-h3: 40px;
+        --f-32-h4: 24px;
+        --f-28-h5: 22px;
+    
+   } 
+  
+header .header-info p{
+    margin-left: 10px;
+}
+.heroSlider-cards{
+    bottom: 18%;
+    align-items: flex-end;
+    left: -2%;
+        
+}
+.menu-bg-card .bg_btn{
+    width: 40px;
+    height: 40px;
+}
+
+
+.menu-main-card{
+    height: 20vh;
+
+}
+.goods-title .shop-btn{
+    width: 50%;
+}
+}
+
+@media(max-width: 550px){
+   
+
+    :root{
+        /* fontsize  */
+       
+        --f-28-Xlarge: 10px;
+        --f-26-large: 18px;
+        --f-17-medium: 15px;
+        --f-16-semi: 15px;
+        --f-15-small: 14px; 
+        --f-14-x-small: 12px;
+    
+       
+        --f-160-h1: 70px;
+        --f-76-h2: 50px;
+        --f-48-h3: 30px;
+        --f-32-h4: 22px;
+        --f-28-h5: 20px;
+    
+   } 
+    .shop-btnGroups{
+        grid-template-columns: 1fr;
+    }
+    .greenies-container .greenies-left{
+        flex-direction: column;
+    }
+    .greenies-left .greenies-card,
+    .greenies-left .greenies-card .greenies-img{
+        width: 100%;
+        height: 200px;
+    }
+    
+    header .down-arrow{
+       display: none;
+    
+    }
+    .img.show-img{
+        width: 100%;
+    }
+    header .header-info p{
+       display: none;
+    }
+    .head-btn-card::after{
+        right: -2px;
+    }
+    .foot .submit-email{
+        flex-direction: column;
+    }
+    #cart{
+        right: 6%;
+    }
+    .foot .submit-email{
+        width: 100%;
+    }
+    .submit-email input:first-child{
+        max-width: 100%;
+        width: 100%;
+    }
+    .container{
+       
+        margin: 0 2% ;
+        
+       }
+       section{
+        margin: 2% 3%;
+        
+       }
+}

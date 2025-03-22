@@ -36,8 +36,8 @@
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
 
     <!-- ---scroll reveal js ---------------------------------->
-    <!-- <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script> -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
     <title> Botanical Coffee Shop From Greenies to Delight..</title>
 </head>
@@ -163,6 +163,21 @@
     </footer>
 
     <script src="asset/JsFile/main.js"></script>
+    <script>
+        ScrollReveal({ 
+    //   reset: true,
+      distance: "60px",
+      duration: 2500,
+      delay:400 
+    });
+     
+    ScrollReveal().reveal('.foot-social-links i, .foot-link a', { delay: 100, origin: 'bottom', interval: 200});
+    ScrollReveal().reveal('.foot h2', { delay: 100, origin: 'bottom' });
+    ScrollReveal().reveal('.submit-email, .privacy-card', { delay: 100, origin: 'left' });
+   
+    ScrollReveal().reveal('.local-foot-content h4, .privacy-container', { delay: 100, origin: 'top' });
+   
+    </script>
     
 </body>
 </html>

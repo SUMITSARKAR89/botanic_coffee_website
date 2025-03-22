@@ -1,3 +1,5 @@
+
+
 // ===============================image slider========================
 const sevenBtns = document.querySelectorAll('.bg_btn');
 const sevenImages = document.querySelectorAll('.sevenImg');
@@ -122,8 +124,6 @@ window.addEventListener("scroll", () => {
     });
 });
 
-
-
 // ========================LOcalmenuBar============================
 const localNavMenu = document.querySelector(".localNavigation");
 const localNav = document.querySelector(".localNav");
@@ -143,6 +143,7 @@ localcloseMenu.addEventListener("click", () => {
     localcloseMenu.style.display = "none";
 
 });
+
 
 
 
@@ -295,8 +296,23 @@ buyButton.addEventListener('click', () => {
   updateCartCountBadge(0); //call from 07
   updateTotalPrice(); //call from 06
 
-  alert('Thank you for purshase');
-})
+  alert('Your product is ready for delivery');
+});
+
+
+// ======scroll reveal============
+ScrollReveal({ 
+  // reset: true,
+  distance: "60px",
+  duration: 2500,
+  delay:400 
+});
+ScrollReveal().reveal('.head', { delay: 100, origin: 'top' });
+
+
+
+
+
 
 
 

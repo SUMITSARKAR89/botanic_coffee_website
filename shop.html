@@ -36,8 +36,8 @@
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
 
     <!-- ---scroll reveal js ---------------------------------->
-    <!-- <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script> -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
     <title> Botanical Coffee Shop From Greenies to Delight..</title>
 </head>
@@ -128,7 +128,7 @@
                 <div class="goods-card sliderOneContent active-one brewing-gear">
                    <div class="productBox"><!--js-->
                     <div class="good-img"><!--js-->
-                        <img src="photo/goodscartImg (4).jpg" alt=""><!--js-->
+                        <img src="photo/goodscartImg (4).jpg" alt="" loading="lazy"><!--js-->
                         <i class="ri-shopping-cart-line add-cart"></i><!--js-->
                     </div>
                     <div class="goods-desc">
@@ -144,7 +144,7 @@
                 <div class="goods-card  sliderOneContent  coffee">
                    <div class="productBox">
                     <div class="good-img">
-                        <img src="photo/goodimg (1).jpg" alt="">
+                        <img src="photo/goodimg (1).jpg" alt="" loading="lazy">
                         <i class="ri-shopping-cart-line add-cart"></i>
                     </div>
                     <div class="goods-desc">
@@ -161,7 +161,7 @@
                 <div class="goods-card sliderOneContent Merchandise">
                    <div class="productBox">
                     <div class="good-img">
-                        <img src="photo/goodscartImg (5).jpg" alt="">
+                        <img src="photo/goodscartImg (5).jpg" alt="" loading="lazy">
                         <i class="ri-shopping-cart-line add-cart"></i>
                     </div>
                     <div class="goods-desc">
@@ -177,7 +177,7 @@
                 <div class="goods-card sliderOneContent coffee">
                     <div class="productBox">
                         <div class="good-img">
-                            <img src="photo/goodimg (1).jpg" alt="">
+                            <img src="photo/goodimg (1).jpg" alt="" loading="lazy">
                             <i class="ri-shopping-cart-line add-cart"></i>
                         </div>
                         <div class="goods-desc">
@@ -194,7 +194,7 @@
                 <div class="goods-card sliderOneContent coffee">
                     <div class="productBox">
                         <div class="good-img">
-                            <img src="photo/goodimg (1).jpg" alt="">
+                            <img src="photo/goodimg (1).jpg" alt="" loading="lazy">
                             <i class="ri-shopping-cart-line add-cart"></i>
                         </div>
                         <div class="goods-desc">
@@ -210,7 +210,7 @@
                 <div class="goods-card sliderOneContent brewing-gear">
                     <div class="productBox">
                         <div class="good-img">
-                            <img src="photo/goodscartImg (3).jpg" alt="">
+                            <img src="photo/goodscartImg (3).jpg" alt="" loading="lazy">
                             <i class="ri-shopping-cart-line add-cart"></i>
                         </div>
                         <div class="goods-desc">
@@ -226,7 +226,7 @@
                 <div class="goods-card sliderOneContent coffee">
                    <div class="productBox">
                     <div class="good-img">
-                        <img src="photo/goodimg (1).jpg" alt="">
+                        <img src="photo/goodimg (1).jpg" alt="" loading="lazy">
                         <i class="ri-shopping-cart-line add-cart"></i>
                     </div>
                     <div class="goods-desc">
@@ -242,7 +242,7 @@
                 <div class="goods-card sliderOneContent coffee">
                     <div class="productBox">
                         <div class="good-img">
-                            <img src="photo/goodimg (1).jpg" alt="">
+                            <img src="photo/goodimg (1).jpg" alt="" loading="lazy">
                             <i class="ri-shopping-cart-line add-cart"></i>
                         </div>
                         <div class="goods-desc">
@@ -258,7 +258,7 @@
                 <div class="goods-card sliderOneContent brewing-gear">
                    <div class="productBox">
                     <div class="good-img">
-                        <img src="photo/goodscartImg (1).jpg" alt="">
+                        <img src="photo/goodscartImg (1).jpg" alt="" loading="lazy">
                         <i class="ri-shopping-cart-line add-cart"></i>
                     </div>
                     <div class="goods-desc">
@@ -275,7 +275,7 @@
                 <div class="goods-card sliderOneContent Merchandise">
                     <div class="productBox">
                         <div class="good-img">
-                            <img src="photo/goodscartImg (2).jpg" alt="">
+                            <img src="photo/goodscartImg (2).jpg" alt="" loading="lazy">
                             <i class="ri-shopping-cart-line add-cart"></i>
                         </div>
                         <div class="goods-desc">
@@ -362,7 +362,21 @@
         </div>
     </footer>
 
-    <script src="asset/JsFile/main.js"></script>
+    <script src="asset/JsFile/main.js"></script> 
+    <script>
+        ScrollReveal({ 
+    //   reset: true,
+      distance: "60px",
+      duration: 2500,
+      delay:400 
+    });
+     
+    ScrollReveal().reveal('.foot-social-links i, .foot-link a, .btn_one, .goods-card ', { delay: 100, origin: 'bottom', interval: 200});
+    ScrollReveal().reveal('.foot h2', { delay: 100, origin: 'bottom' });
+    ScrollReveal().reveal('.submit-email, .greenies-card', { delay: 100, origin: 'left' });
+    ScrollReveal().reveal('.slideOne-search, .greenies-right', { delay: 100, origin: 'right' });
+    ScrollReveal().reveal('.local-foot-content h4, .shopGoods-title', { delay: 100, origin: 'top' });
+    </script>
     
 </body>
 </html>
